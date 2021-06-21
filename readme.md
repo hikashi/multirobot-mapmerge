@@ -50,6 +50,6 @@ code as follows:
 
 To run Rviz, add this into the launch file (the file used to declare launch base):
 ```xml
-    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find ros_multitb3)/rviz/multi_tb3_gmapping2.rviz"/>
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find yourFolder)/rviz/multi_tb3_gmapping2.rviz"/>
 ```
 
