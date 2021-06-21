@@ -1,4 +1,10 @@
- ``` xml
+create a launch file in the folder you are working from and then launch in new terminal
+  
+  $ roslaunch [file] map_merge.launch
+
+code as follows:
+
+``` xml
  <!-- Map megring (know inital position case)-->
   <group ns="/$(arg first_tb3)/map_merge">
     <param name="init_pose_x" value="$(arg first_tb3_x_pos)"/>
