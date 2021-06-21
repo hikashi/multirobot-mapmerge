@@ -1,6 +1,6 @@
 create a launch file in the folder you are working from and then launch in new terminal
   
-  $ roslaunch [file] map_merge.launch
+      $ roslaunch [file] map_merge.launch
 
 code as follows:
 
@@ -46,3 +46,10 @@ code as follows:
       <param name="estimation_confidence" value="1.0"/>
   </node>
 ```
+
+
+To run Rviz, add this into the launch file (the file used to declare launch base):
+```xml
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find ros_multitb3)/rviz/multi_tb3_gmapping2.rviz"/>
+```
+
